@@ -1,0 +1,12 @@
+file_format: "1"
+id: dom4x6
+name: Dominick-4x6-Dactyl-Manuform
+type: shield
+url: https://dominickpham.com
+requires: [pro_micro]
+features:
+  - keys
+  - encoder
+siblings:
+  - dom4x6_left
+  - dom4x6_right
