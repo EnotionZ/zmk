@@ -4,5 +4,8 @@ name: TG4x Dom
 type: shield
 url: https://github.com/MythosMann/tg4x
 requires: [pro_micro]
+exposes: [i2c_oled]
 features:
   - keys
+  - display
+  - encoder
