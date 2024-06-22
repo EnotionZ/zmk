@@ -4,12 +4,6 @@
 #include <dt-bindings/zmk/ext_power.h>
 #include <dominick.dtsi>
 
-#define MAC 1
-#define LWR 2
-#define RSE 3
-#define ADJ 4
-#define CFG 5
-
 / {
 
     // https://zmk.dev/docs/codes
