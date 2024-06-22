@@ -14,6 +14,7 @@
 #define RSE 3
 #define ADJ 4
 #define CFG 5
+#define PBRK (PAUSE_BREAK)
 
 / {
     keymap {
@@ -45,7 +46,7 @@
             bindings = <
 &kp GRAVE &kp N1   &kp N2  &kp N3   &kp N4   &kp N5      &kp N6   &kp N7    &kp N8    &kp N9    &kp N0   &trans &trans &trans
 &kp TAB   &pwdme   &trans  &kp INS  &kp RET  &pwd1p      &kp LBKT &kp LBRC  &kp RBRC  &kp LBKT  &kp RBKT        &trans
-&trans    &kp BSPC &kp DEL &trans   &pwdev   &pwdaa      &trans   &kp MINUS &kp EQUAL &kp UNDER &kp PLUS        &trans
+&trans    &kp BSPC &kp DEL &trans   &pwdev   &email      &trans   &kp MINUS &kp EQUAL &kp UNDER &kp PLUS        &trans
 &trans    &trans           &mo LWR  &mo CFG                       &trans    &mo ADJ             &trans   &trans &trans
             >;
         };
@@ -53,10 +54,10 @@
         raise_layer {
             label = "Raise";
             bindings = <
-&kp GRAVE &kp EXCL &kp AT  &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp STAR &kp LPAR  &kp RPAR &trans &kp DEL &trans
-&trans    &trans   &trans  &trans   &trans   &trans      &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT &kp SQT         &kp K_MUTE
-&trans    &trans   &trans  &trans   &trans   &trans      &kp C_PP  &kp VOLD  &kp VOLU &kp MPRV  &kp MNXT        &trans
-&trans    &trans           &mo ADJ  &trans                         &mo CFG   &mo RSE            &trans   &trans &trans
+&kp GRAVE &kp EXCL &kp AT  &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS &kp STAR  &kp LPAR  &kp RPAR &trans &kp DEL &trans
+&trans    &trans   &trans  &trans   &trans   &trans      &kp LEFT  &kp DOWN &kp UP    &kp RIGHT &kp SQT         &kp C_MUTE
+&trans    &trans   &trans  &trans   &trans   &trans      &kp C_PP  &kp C_VOL_DN &kp C_VOL_UP  &kp C_PREV  &kp C_NEXT        &trans
+&trans    &trans           &mo ADJ  &trans                         &mo CFG  &mo RSE             &trans   &trans &trans
             >;
         };
 
