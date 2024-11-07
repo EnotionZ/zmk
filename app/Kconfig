@@ -42,9 +42,9 @@ config BT_DIS_MANUF
 if SOC_SERIES_NRF52X
 
 # Default on for our usage until boards implement retained bootmode.
-#config NRF_STORE_REBOOT_TYPE_GPREGRET
-#    bool
-#    default y
+config NRF_STORE_REBOOT_TYPE_GPREGRET
+   bool
+   default y
 
 endif
 
